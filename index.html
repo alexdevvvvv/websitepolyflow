@@ -1,0 +1,274 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+  </head>
+  <body class="bg-gray-50">
+    <!-- Navbar -->
+    <nav class="bg-transparent shadow-sm backdrop-blur-sm fixed w-full z-50">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between h-20">
+          <!-- Logo et nom -->
+          <div class="flex items-center">
+            <div class="flex-shrink-0 flex items-center">
+              <img src="images/Web.png" alt="PolyFlow Logo" class="h-16 w-auto object-contain hover:scale-105 transition-transform duration-300 shadow-md rounded-lg" />
+            </div>
+          </div>
+
+          <!-- Navigation desktop -->
+          <div class="hidden md:flex items-center space-x-8">
+            <a href="#" class="text-gray-700 hover:text-indigo-600 px-4 py-2 rounded-lg text-sm font-medium transition-all duration-300 hover:scale-105 hover:shadow-md">Démo</a>
+            <a href="#" class="text-gray-700 hover:text-indigo-600 px-4 py-2 rounded-lg text-sm font-medium transition-all duration-300 hover:scale-105 hover:shadow-md">Documentation</a>
+            <a href="#" class="text-gray-700 hover:text-indigo-600 px-4 py-2 rounded-lg text-sm font-medium transition-all duration-300 hover:scale-105 hover:shadow-md">API</a>
+            <a href="#" class="text-gray-700 hover:text-indigo-600 px-4 py-2 rounded-lg text-sm font-medium transition-all duration-300 hover:scale-105 hover:shadow-md">GitHub</a>
+            <a href="#" class="bg-indigo-600 text-white px-6 py-2 rounded-lg text-sm font-medium hover:bg-indigo-700 transition-all duration-300 hover:scale-105 hover:shadow-md">Commencer</a>
+          </div>
+
+          <!-- Bouton menu mobile -->
+          <div class="md:hidden flex items-center">
+            <button type="button" class="mobile-menu-button inline-flex items-center justify-center p-2 rounded-lg text-gray-700 hover:text-indigo-600 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500 transition-all duration-300 hover:scale-105 hover:shadow-md" aria-controls="mobile-menu" aria-expanded="false">
+              <span class="sr-only">Ouvrir le menu</span>
+              <i class="fas fa-bars"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Menu mobile -->
+      <div class="md:hidden hidden" id="mobile-menu">
+        <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+          <a href="#" class="block text-gray-700 hover:text-indigo-600 px-4 py-2 rounded-lg text-base font-medium transition-all duration-300 hover:scale-105 hover:shadow-md">Démo</a>
+          <a href="#" class="block text-gray-700 hover:text-indigo-600 px-4 py-2 rounded-lg text-base font-medium transition-all duration-300 hover:scale-105 hover:shadow-md">Documentation</a>
+          <a href="#" class="block text-gray-700 hover:text-indigo-600 px-4 py-2 rounded-lg text-base font-medium transition-all duration-300 hover:scale-105 hover:shadow-md">API</a>
+          <a href="#" class="block text-gray-700 hover:text-indigo-600 px-4 py-2 rounded-lg text-base font-medium transition-all duration-300 hover:scale-105 hover:shadow-md">GitHub</a>
+          <a href="#" class="block bg-indigo-600 text-white px-4 py-2 rounded-lg text-base font-medium transition-all duration-300 hover:scale-105 hover:shadow-md">Commencer</a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="min-h-screen flex items-center justify-center relative overflow-hidden bg-gradient-to-b from-gray-50 to-indigo-50 pt-20">
+      <!-- Cercles décoratifs en arrière-plan -->
+      <div class="absolute top-0 left-0 w-96 h-96 bg-indigo-200 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob"></div>
+      <div class="absolute top-0 right-0 w-96 h-96 bg-purple-200 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob animation-delay-2000"></div>
+      <div class="absolute -bottom-8 left-20 w-96 h-96 bg-pink-200 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob animation-delay-4000"></div>
+
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 relative z-10">
+        <div class="text-center">
+          <!-- Section MyDil mise en avant -->
+          <div class="mb-12 transform hover:scale-105 transition-all duration-300">
+            <div class="inline-flex items-center space-x-4 bg-white/80 backdrop-blur-sm px-8 py-4 rounded-full shadow-lg">
+              <span class="text-xl font-semibold text-indigo-600">Propulsé par</span>
+              <img src="images/MyDil.png" alt="MyDil Logo" class="h-16 w-auto object-contain" />
+            </div>
+          </div>
+
+          <h1 class="text-5xl md:text-6xl font-extrabold text-gray-900 mb-8">
+            <span class="block">Un nouveau moteur 3D</span>
+            <span class="block text-transparent bg-clip-text bg-gradient-to-r from-indigo-600 to-purple-600">en développement</span>
+          </h1>
+          
+          <p class="mt-6 text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+            Vous en avez marre des moteurs 3D web trop complexes ? Nous aussi. C'est pour ça 
+            qu'on développe PolyFlow, un moteur 3D qui sera simple à utiliser, performant, 
+            et accessible à tous. Le projet est en cours de développement, et on a hâte de 
+            vous montrer ce qu'on prépare.
+          </p>
+
+          <div class="mt-10 flex items-center justify-center space-x-6">
+            <a href="#" class="px-8 py-4 bg-indigo-600 text-white rounded-lg text-lg font-semibold hover:bg-indigo-700 transition-all duration-300 hover:scale-105 hover:shadow-lg">
+              Suivre le projet
+            </a>
+            <a href="#" class="px-8 py-4 bg-white text-indigo-600 rounded-lg text-lg font-semibold hover:bg-gray-50 transition-all duration-300 hover:scale-105 hover:shadow-lg border-2 border-indigo-600">
+              Rejoindre l'aventure
+            </a>
+          </div>
+
+          <!-- Stats -->
+          <div class="mt-20 grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300">
+              <div class="text-4xl font-bold text-indigo-600 mb-2">60 FPS</div>
+              <div class="text-gray-600">Performance Optimale</div>
+            </div>
+            <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300">
+              <div class="text-4xl font-bold text-indigo-600 mb-2">100%</div>
+              <div class="text-gray-600">Compatibilité Web</div>
+            </div>
+            <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300">
+              <div class="text-4xl font-bold text-indigo-600 mb-2">0ms</div>
+              <div class="text-gray-600">Latence Minimale</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section À propos -->
+    <section class="py-20 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+          <h2 class="text-4xl font-bold text-gray-900 mb-4">Qui Sommes-Nous ?</h2>
+          <div class="w-24 h-1 bg-indigo-600 mx-auto rounded-full"></div>
+        </div>
+
+        <div class="grid md:grid-cols-2 gap-12 items-center">
+          <div class="space-y-6">
+            <h3 class="text-2xl font-semibold text-indigo-600">Notre Vision</h3>
+            <p class="text-gray-600 text-lg leading-relaxed">
+              On travaille actuellement sur un moteur 3D web qui va changer la donne. 
+              L'idée ? Créer quelque chose de simple mais puissant, qui permettra à tous 
+              les développeurs web de créer des expériences 3D sans se prendre la tête.
+            </p>
+            <p class="text-gray-600 text-lg leading-relaxed">
+              Avec My Dil qui nous accompagne dans cette aventure, on est en train de 
+              construire les fondations de ce qui sera, on l'espère, un outil essentiel 
+              pour la création web 3D. C'est un défi passionnant, et on a hâte de voir 
+              ce que ça va donner.
+            </p>
+            <div class="flex items-center space-x-4 pt-4">
+              <a href="#" class="text-indigo-600 hover:text-indigo-700 font-medium flex items-center">
+                <i class="fab fa-github text-xl mr-2"></i>
+                Notre GitHub
+              </a>
+              <a href="#" class="text-indigo-600 hover:text-indigo-700 font-medium flex items-center">
+                <i class="fas fa-users text-xl mr-2"></i>
+                Rejoignez-nous
+              </a>
+            </div>
+          </div>
+
+          <div class="grid grid-cols-2 gap-6">
+            <div class="bg-indigo-50 p-6 rounded-xl transform hover:scale-105 transition-all duration-300">
+              <div class="text-indigo-600 text-4xl mb-4">
+                <i class="fas fa-lightbulb"></i>
+              </div>
+              <h4 class="text-xl font-semibold text-gray-900 mb-2">Innovation</h4>
+              <p class="text-gray-600">Exploration constante des nouvelles technologies web</p>
+            </div>
+            <div class="bg-purple-50 p-6 rounded-xl transform hover:scale-105 transition-all duration-300">
+              <div class="text-purple-600 text-4xl mb-4">
+                <i class="fas fa-graduation-cap"></i>
+              </div>
+              <h4 class="text-xl font-semibold text-gray-900 mb-2">Apprentissage</h4>
+              <p class="text-gray-600">Formation continue et partage de connaissances</p>
+            </div>
+            <div class="bg-pink-50 p-6 rounded-xl transform hover:scale-105 transition-all duration-300">
+              <div class="text-pink-600 text-4xl mb-4">
+                <i class="fas fa-code"></i>
+              </div>
+              <h4 class="text-xl font-semibold text-gray-900 mb-2">Développement</h4>
+              <p class="text-gray-600">Création de solutions innovantes et performantes</p>
+            </div>
+            <div class="bg-blue-50 p-6 rounded-xl transform hover:scale-105 transition-all duration-300">
+              <div class="text-blue-600 text-4xl mb-4">
+                <i class="fas fa-users"></i>
+              </div>
+              <h4 class="text-xl font-semibold text-gray-900 mb-2">Communauté</h4>
+              <p class="text-gray-600">Collaboration et entraide entre développeurs</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-300">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+          <!-- Logo et description -->
+          <div class="col-span-1 md:col-span-2">
+            <img src="images/Web.png" alt="PolyFlow Logo" class="h-12 w-auto mb-4" />
+            <p class="text-gray-400 mb-4">
+              PolyFlow est un projet en développement qui vise à créer un moteur 3D web 
+              innovant et accessible. En collaboration avec My Dil, nous travaillons 
+              sur une solution qui simplifiera la création d'expériences 3D sur le web. 
+              Restez à l'écoute pour suivre notre progression !
+            </p>
+            <div class="flex space-x-4">
+              <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                <i class="fab fa-github text-xl"></i>
+              </a>
+              <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                <i class="fab fa-twitter text-xl"></i>
+              </a>
+              <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                <i class="fab fa-discord text-xl"></i>
+              </a>
+              <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                <i class="fab fa-linkedin text-xl"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Liens rapides -->
+          <div>
+            <h3 class="text-white text-lg font-semibold mb-4">Liens Rapides</h3>
+            <ul class="space-y-2">
+              <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Documentation</a></li>
+              <li><a href="#" class="text-gray-400 hover:text-white transition-colors">API</a></li>
+              <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Exemples</a></li>
+              <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Blog</a></li>
+            </ul>
+          </div>
+
+          <!-- Contact -->
+          <div>
+            <h3 class="text-white text-lg font-semibold mb-4">Contact</h3>
+            <ul class="space-y-2">
+              <li class="flex items-center">
+                <i class="fas fa-envelope mr-2"></i>
+                <a href="mailto:contact@polyflow.dev" class="text-gray-400 hover:text-white transition-colors">contact@polyflow.dev</a>
+              </li>
+              <li class="flex items-center">
+                <i class="fas fa-map-marker-alt mr-2"></i>
+                <span class="text-gray-400">France</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Barre de bas de page -->
+        <div class="border-t border-gray-800 mt-12 pt-8">
+          <div class="flex flex-col md:flex-row justify-between items-center">
+            <p class="text-gray-400 text-sm">
+              © 2025 PolyFlow. Tous droits réservés.
+            </p>
+            <div class="flex space-x-6 mt-4 md:mt-0">
+              <a href="#" class="text-gray-400 hover:text-white text-sm transition-colors">Mentions légales</a>
+              <a href="#" class="text-gray-400 hover:text-white text-sm transition-colors">Politique de confidentialité</a>
+              <a href="#" class="text-gray-400 hover:text-white text-sm transition-colors">Conditions d'utilisation</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Script pour le menu mobile -->
+    <script>
+      document.querySelector('.mobile-menu-button').addEventListener('click', function() {
+        document.getElementById('mobile-menu').classList.toggle('hidden');
+      });
+    </script>
+
+    <style>
+      @keyframes blob {
+        0% { transform: translate(0px, 0px) scale(1); }
+        33% { transform: translate(30px, -50px) scale(1.1); }
+        66% { transform: translate(-20px, 20px) scale(0.9); }
+        100% { transform: translate(0px, 0px) scale(1); }
+      }
+      .animate-blob {
+        animation: blob 7s infinite;
+      }
+      .animation-delay-2000 {
+        animation-delay: 2s;
+      }
+      .animation-delay-4000 {
+        animation-delay: 4s;
+      }
+    </style>
+  </body>
+</html>
